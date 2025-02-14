@@ -4,16 +4,18 @@ body{margin: 0; font-family: monofur;}
 body {font-family: 'Monofur', sans-serif;margin: 0;padding: 0;background-color: 
     #f8f9fa;color: #ffffff;}
 
-body {margin: 0; padding: 0; height: 100vh; background-color:#066966;}
 
-header{background-image: url("img/fondo_cabecera.jpg"); color: white; text-align: center;position: relative; }
+body {margin: 0; padding: 0; height: 100vh; background-color:#066966; background-repeat: no-repeat;
+    padding-left: 40px;padding-right: 40px;}
+
+header{background-image: url("img/fondo_cabecera.jpg"); color: white; text-align: center;position: relative; border-radius: 10px;  }
 
 img {border-radius: 8px;}
 
 header h1, header p {position: relative; z-index: 1;}
 
 nav {background-color: #68BAAB;
-padding: 10px 0;}
+padding: 10px 0; border-radius: 10px;}
 
 nav ul {list-style: none; padding: 0; margin: 0; display: flex;
 justify-content: center;}
@@ -44,7 +46,7 @@ button:hover {background-color: #4b9d8e;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
 
 .animacion {animation: fadeIn 2s ease-in-out;}
 
-footer {background-color: #e81e4a; color: white; text-align: center;
-padding: 100px; position: relative;}
+footer {background-color: #395852; color: white; text-align: center;
+padding: 100px; position: relative; border-radius: 10px;}
 
 footer .social-icons a:hover {color: #e81e4a;}
