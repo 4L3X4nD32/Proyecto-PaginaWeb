@@ -9,8 +9,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+
 <body>
 
+  <video id="video-fondo" autoplay muted loop>
+    <source src="video/flore.mp4" type="video/mp4">
+    Tu navegador no soporta el formato de video.
+</video>
 
   <header id="cabecera">
     <img src="img/logo.png" width="35%">
@@ -37,12 +42,10 @@
     <video src="video/ocupado.mp4" loop autoplay muted width="50%" style="border-radius: 15px;">
       Tu navegador no soporta la reproducción de videos.
     </video>
-    <p>
       Somos un pequeño pero apasionado grupo de personas comprometidas con el rescate, cuidado y bienestar de los animales. Nuestra misión es ofrecer una segunda oportunidad a aquellos animales que han sido abandonados, maltratados o que simplemente no han tenido la suerte de encontrar un hogar amoroso.
       Cada uno de los animales que rescatamos recibe la atención y el cariño que necesita para recuperarse física y emocionalmente. Nos aseguramos de que estén sanos, vacunados y listos para integrarse a una nueva familia que los ame y los cuide como merecen.
       Nuestro objetivo no es solo encontrar hogares para ellos, sino asegurarnos de que esos hogares sean lugares donde puedan vivir felices, seguros y rodeados de amor. Creemos firmemente que cada animal merece una vida digna, y trabajamos incansablemente para hacer realidad ese sueño.
       Únete a nosotros en esta noble causa. Ya sea adoptando, siendo voluntario o colaborando de alguna manera, juntos podemos marcar la diferencia en la vida de muchos animales que necesitan una oportunidad.
-    </p>
   </section>
 </section>
 
@@ -105,6 +108,25 @@
     </form>
 </section>
 </section>
+
+<script>
+  document.getElementById('donar').addEventListener('click', function() {
+      alert('Gracias por tu interés en donar. Pronto habilitaremos esta opción.');
+  });
+
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+
+      if (name === '' || email === '' || message === '') {
+          alert('Por favor, completa todos los campos antes de enviar.');
+          event.preventDefault();
+      } else {
+          alert('Mensaje enviado correctamente. Nos pondremos en contacto contigo.');
+      }
+  });
+</script>
 
   <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px"> 
     <i class="fa fa-facebook-official w3-hover-opacity"></i>
