@@ -8,44 +8,71 @@
     <title>Conoce a nuestros Peludos</title>
     <link rel="stylesheet" href="estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<style>
-    button {padding: 10px 20px; font-size: 16px;
-        background-color: #4CAF50; color: white; border: none;
-        border-radius: 5px; cursor: pointer;}
-
-        header{background-color: #529286; 
-        color: white; text-align: center;position: 
-        relative; border-radius: 10px;  }
-
-        .contenedor {
-            background-color: #529286; padding: 60px;
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            border-radius: 10px;
-            padding: 20px;
-            max-width: 900px;
-            width: 80%;
-            margin: 0 auto;
+    <style>
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
         }
 
-        
+        header {
+            background-color: #529286;
+            color: white;
+            text-align: center;
+            position: relative;
+            border-radius: 10px;
+        }
+
+        .contenedor {
+            background-color: rgba(104, 186, 171, 0.9); 
+            padding: 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: left;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 900px;
+            width: 90%;
+            margin: auto;
+        }
 
         .contenedor img {
+            float:left;
             width: 160px;
             margin-right: 20px;
             border-radius: 10px;
         }
+    
 
         .contenedor p {
+            display: inline-block;
+            vertical-align: top;
+            text-align: left;
             font-size: 18px;
             line-height: 1.5;
+        }
+
+        #video-fondo {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
         }
 </style>
 </head>
 <body>
+
+    <video id="video-fondo" autoplay muted loop>
+        <source src="video/Cesped.mp4" type="video/mp4">
+        Tu navegador no soporta el formato de video.
+    </video>
 
 <button><a href="index.html">Volver Atrás</a></button>
 
@@ -57,81 +84,97 @@
 
     <div class="contenedor">
         <section style="background-color: #68BAAB; padding: 50px;border-radius: 25px;">
-        <img src="img/Bastet.jpg" alt="Bastet">
-        <p><span style="font-size: 50px;">Bastet</span>.</p>
-        <p>Sigilosa y astuta, Bastet es un enigma andante. Sus ojos dorados parecen brillar en la oscuridad, y su andar silencios la convierte en una maestra del sigilo. Aunque parece reservada, tiene un lado cariñoso con quienes ganan su confianza.</p>
+        <img src="img/Bastet.jpg" alt="Bastet" style="float:left;" hspace="5" vspace="5" style="float: none;" >
+        <span style="font-size: 50px;">Bastet:</span>
+        Sigilosa y astuta, Bastet es un enigma andante. 
+        Sus ojos dorados parecen brillar en la oscuridad, 
+        y su andar silencios la convierte en una maestra del sigilo. 
+        Aunque parece reservada, tiene un lado cariñoso con quienes ganan su confianza.
     </div>
 </section>
     
     <div class="contenedor">
         <section style="background-color: #68BAAB; padding: 50px;border-radius: 25px;">
         <img src="img/Leo.jpg" alt="Leo">
-        <p><span style="font-size: 50px;">Leo</span>.</p>
-        <p>Es un verdadero aventurero nato. Siempre está explorando rincones nuevos y metiéndose en pequeñas travesuras. Sus grandes ojos verdes reflejan su curiosidad infinita, y su cola en constante movimiento delata su energía inagotable.</p>
+        <span style="font-size: 50px;">Leo:</span>
+        Es un verdadero aventurero nato. 
+        Siempre está explorando rincones nuevos y metiéndose en pequeñas travesuras. Sus grandes ojos verdes reflejan su curiosidad infinita, y su cola en constante movimiento delata su energía inagotable.
     </section>
     </div>
 
     <div class="contenedor">
         <section style="background-color: #68BAAB; padding: 50px;border-radius: 25px;">
         <img src="img/Nieve.jpg" alt="Nieve">
-        <p><span style="font-size: 50px;">Nieve</span>.</p>
-        <p>Con un pelaje espeso y esponjoso, Nieve parece un lobo sacado de una historia de invierno. Sus ojos, que pueden ser azules, marrones o incluso de distinto color, brillan con un espíritu libre y aventurero. Ama correr y jugar en la nieve, y su aullido melódico es su forma especial de comunicarse. Aunque independiente, es una perro fiel y amorosa con su familia.</p>
+        <span style="font-size: 50px;">Nieve:</span>
+        Con un pelaje espeso y esponjoso, Nieve parece un lobo sacado de una historia de invierno. Sus ojos, que pueden ser azules, marrones o incluso de distinto color, brillan con un espíritu libre y aventurero. Ama correr y jugar en la nieve, y su aullido melódico es su forma especial de comunicarse. Aunque independiente, es una perro fiel y amorosa con su familia.
     </section>
     </div>
 
     <div class="contenedor">
         <section style="background-color: #68BAAB; padding: 50px;border-radius: 25px;">
         <img src="img/Handia.jpg" alt="Handia">
-        <p><span style="font-size: 50px;">Handia</span>.</p>
-        <p>Con un pelaje oscuro y brillante que resalta su musculatura, Handia es la definición de elegancia y fortaleza. Sus ojos profundos reflejan inteligencia y lealtad, y su presencia impone respeto. Aunque su apariencia pueda parecer seria, es una compañera cariñosa y protectora con su familia, siempre dispuesta a defender a quienes ama.</p>
+        <span style="font-size: 50px;">Handia:</span>
+        Con un pelaje oscuro y brillante que resalta su musculatura, 
+        Handia es la definición de elegancia y fortaleza. 
+        Sus ojos profundos reflejan inteligencia y lealtad, 
+        y su presencia impone respeto. 
+        Aunque su apariencia pueda parecer seria, 
+        es una compañera cariñosa y protectora con su familia, 
+        siempre dispuesta a defender a quienes ama.
     </section>
     </div>
 
     <div class="contenedor">
         <section style="background-color: #68BAAB; padding: 50px;border-radius: 25px;">
         <img src="img/Lila.png" alt="Lila">
-        <p><span style="font-size: 50px;">Lila</span>.</p>
-        <p>Con un pelaje impecablemente blanco y esponjoso, esta gata parece salida de un cuento de hadas. Sus ojos heterocromáticos—uno azul y otro ámbar le dan una mirada hipnotizante. Se mueve con gracia y disfruta de largas siestas al sol.</p>
+        <span style="font-size: 50px;">Lila:</span>
+            Con un pelaje impecablemente blanco y esponjoso, 
+            esta gata parece salida de un cuento de hadas. 
+            Sus ojos heterocromáticos—uno azul y otro ámbar le dan una mirada hipnotizante. Se mueve con gracia y disfruta de largas siestas al sol.
     </section>
     </div>
 
     <div class="contenedor">
         <section style="background-color: #68BAAB; padding: 50px;border-radius: 25px;">
         <img src="img/Milu.jpg" alt="Milu">
-        <p><span style="font-size: 50px;">Milu</span>.</p>
-        <p>Pequeño pero con una personalidad enorme, Milu es puro carácter. Su diminuto cuerpo esconde una energía inagotable, y sus grandes ojos expresivos reflejan cada emoción con intensidad. Le encanta estar en brazos y es ferozmente leal a su dueño, enfrentándose sin miedo a cualquier desafío, sin importar su tamaño.</p>
+       <span style="font-size: 50px;">Milu:</span>
+            Pequeño pero con una personalidad enorme, Milu es puro carácter. Su diminuto cuerpo esconde una energía inagotable, y sus grandes ojos expresivos reflejan cada emoción con intensidad. Le encanta estar en brazos y es ferozmente leal a su dueño, enfrentándose sin miedo a cualquier desafío, sin importar su tamaño.
     </section>
     </div>
 
     <div class="contenedor">
         <section style="background-color: #68BAAB; padding: 50px;border-radius: 25px;">
         <img src="img/Lucho.jpg" alt="Lucho">
-        <p><span style="font-size: 50px;">Lucho</span>.</p>
-        <p>Lucho parece deslizarse con una gracia natural, como si cada uno de sus movimientos estuviera coreografiado. Sus ojos esmeralda, intensos y expresivos, parecen esconder secretos ancestrales. A pesar de su aire enigmático, es un compañero leal y cariñoso, siempre dispuesto a frotarse contra las piernas de su humano favorito. Le encanta dormir en los lugares más inesperados y, cuando juega, lo hace con una mezcla perfecta de sigilo y agilidad.</p>
+        <span style="font-size: 50px;">Lucho:</span>
+        Lucho parece deslizarse con una gracia natural, 
+        como si cada uno de sus movimientos estuviera coreografiado. 
+        Sus ojos esmeralda, intensos y expresivos, 
+        parecen esconder secretos ancestrales. 
+        A pesar de su aire enigmático, 
+        es un compañero leal y cariñoso, 
+        siempre dispuesto a frotarse contra las piernas de su humano favorito. Le encanta dormir en los lugares más inesperados y, cuando juega, lo hace con una mezcla perfecta de sigilo y agilidad.
     </section>
     </div>
 
     <div class="contenedor">
         <section style="background-color: #68BAAB; padding: 50px;border-radius: 25px;">
         <img src="img/Coco.jpg" alt="Coco">
-        <p><span style="font-size: 50px;">Coco</span>.</p>
-        <p>Pequeña, regordeta y llena de energía, Coco es un torbellino de diversión. Siempre está correteando detrás de su propio reflejo o persiguiendo cualquier cosa que se mueva. Ronronea a todo volumen cuando recibe caricias en la barriga.</p>
+        <span style="font-size: 50px;">Coco:</span>
+        Pequeña, regordeta y llena de energía, Coco es un torbellino de diversión. Siempre está correteando detrás de su propio reflejo o persiguiendo cualquier cosa que se mueva. Ronronea a todo volumen cuando recibe caricias en la barriga.
     </section>
     </div>
 
     <div class="contenedor">
         <section style="background-color: #68BAAB; padding: 50px;border-radius: 25px;">
         <img src="img/Pancho.png" alt="Pancho">
-        <p><span style="font-size: 50px;">Pancho</span>.</p>
-        <p>Este perrito de pelaje negro azabache y tamaño compacto es un torbellino de alegría. Siempre está en movimiento, explorando cada rincón y buscando nuevas aventuras. Sus orejas puntiagudas y su colita inquieta delatan su curiosidad inagotable. Es juguetón, cariñoso y le encanta acurrucarse en el regazo de su persona favorita.</p>
+        <span style="font-size: 50px;">Pancho:</span>Este perrito de pelaje negro azabache y tamaño compacto es un torbellino de alegría. Siempre está en movimiento, explorando cada rincón y buscando nuevas aventuras. Sus orejas puntiagudas y su colita inquieta delatan su curiosidad inagotable. Es juguetón, cariñoso y le encanta acurrucarse en el regazo de su persona favorita.
     </section>
     </div>
 
     <div class="contenedor">
         <section style="background-color: #68BAAB; padding: 50px;border-radius: 25px;">
         <img src="img/greka.jpg" alt="Greka">
-        <p><span style="font-size: 50px;">Greka</span>.</p>
-        <p>Greka tiene una expresión siempre seria, como si estuviera reflexionando sobre los misterios del universo. Prefiere los lugares tranquilos y disfruta observando a los humanos con aire de sabia. Aunque no es la más juguetona, su lealtad es inquebrantable.</p>
+        <span style="font-size: 50px;">Greka:</span>Greka tiene una expresión siempre seria, como si estuviera reflexionando sobre los misterios del universo. Prefiere los lugares tranquilos y disfruta observando a los humanos con aire de sabia. Aunque no es la más juguetona, su lealtad es inquebrantable.
     </section>
     </div>
 
